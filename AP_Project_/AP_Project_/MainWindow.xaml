@@ -1,0 +1,40 @@
+﻿<Window x:Class="AP_Project_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AP_Project_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="Library.jpg" Opacity="0.4" />
+    </Window.Background>
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="46" FontFamily="Viner Hand ITC"><Run Foreground="#FF4ACA67" Text="Login"/></TextBlock>
+            <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="110,10">
+                <TextBlock Text="Username:" FontSize="30" FontFamily="Viner Hand ITC" Foreground="#FFFFD300"/>
+                <TextBox x:Name="Username"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" VerticalAlignment="Center" Margin="110,10">
+                <TextBlock Text="Password:" FontSize="30" FontFamily="Viner Hand ITC" Foreground="#FFFFD300"/>
+                <PasswordBox x:Name="Password"/>
+            </StackPanel>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Register" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="10" FontSize="15" FontFamily="Viner Hand ITC" Foreground="#FF4ACA67" Click="Button_Click_Register"/>
+                <Button Grid.Column="1" Content="Enter" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="17,10" FontSize="15" FontFamily="Viner Hand ITC" Foreground="#FF4ACA67" Click="Button_Click_Enter"/>
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</Window>
